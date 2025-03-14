@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 import 'dart:math';
-
 import 'package:homework/home_page.dart';
 
 class GetStartedPage extends StatelessWidget {
@@ -74,9 +72,9 @@ class GetStartedPage extends StatelessWidget {
         alignment: Alignment.center,
         width: 186,
         height: 274,
-        //margin: const EdgeInsets.only(top: 88, left: 88),
         child: Image.asset(
           'assets/bluebird.png',
+          fit: BoxFit.cover,
         ),
       ),
     );
@@ -104,16 +102,16 @@ class GetStartedPage extends StatelessWidget {
 
   Widget _getStartedButton(BuildContext context) {
     return Positioned(
-      top: 598,
+      top: 610,
       left: 0,
       right: 0,
       child: Center(
         child: Container(
-          width: 214, // Fixed width
-          height: 53, // Fixed height
+          width: 214,
+          height: 53,
           decoration: BoxDecoration(
             color: Colors.white,
-            borderRadius: BorderRadius.circular(15), // Rounded corners
+            borderRadius: BorderRadius.circular(15),
           ),
           child: TextButton(
             onPressed: () {
